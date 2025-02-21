@@ -38,3 +38,79 @@
     - **`RTP (Return to Player)`**
     
      The percentage of returns to the player, indicating the proportion of bets returned as winnings.
+
+  ## **Summary**
+
+The dashboard provides an overview of key metrics related to online casino performance through the following visualizations:
+
+### **`BET, WIN, RAKE Time Trends`**
+
+A **line area chart** showing the evolution of **BET** and **WIN over time**, with the **RAKE** represented as the **difference** between the **two areas  and a dynamic KPI rectangle displaying the total RAKE for the selected period.** 
+
+### **`Most Played Games`**
+
+ A **bar chart** displaying the **top 5 games** with the **highest BET** and relative WIN, along with overall and average session RTP labels.
+
+### **`Top Players`**
+
+ A **bar chart** showing the **top 5 players** **by BUY IN** and corresponding STACK, with overall and average session RTP labels.
+
+### **`Casino provider distribution`**
+
+A **pie chart** displaying the market share of different **casino providers** based on total **BUY IN**.
+
+## Methodology
+
+1. **Data Collection**: The data used for this project are personal, as I currently work in the online casino sector. They were downloaded from my management panel after removing customer usernames and emails for privacy reasons. Additionally, historical data could not be obtained as the bookmaker's system does not allow access to older records.
+2. **Data Preparation**:
+    - A master data table was created and all data were formatted in their most coherent formats. In some cases, tricks like 'Text to Columns' were necessary because Excel did not recognize certain data formats.
+    - Verification of duplicate or missing data was performed to ensure data integrity.
+3. **Data Preparation and Auxiliary Columns**:
+    - A master data table was created and all data were formatted in their most coherent formats. In some cases, tricks like 'Text to Columns' were necessary because Excel did not recognize certain data formats.
+    - Verification of duplicate or missing data was performed to ensure data integrity.
+    - Auxiliary columns were created to facilitate calculations and enhance data manipulation efficiency.
+4. **Pivot Tables ,Dynamic Tables and Cells**:
+    - Pivot tables were built to efficiently aggregate data, enabling dynamic exploration of key metrics and trends.
+    - Dynamic tables linked to the pivot tables were created for advanced calculations, such as computing the 'Overall RTP.'
+    - Dynamic cells such as the RAKE one linked to the pivot table to display the Total RAKE based on time period chosen.
+5. **Pivot Charts**:
+    - Pivot charts were created to visualize the aggregated data from the pivot tables, forming the core of the dashboard’s graphical representation.
+6. **Dashboard Assembly**:
+    - All charts were organized on a dedicated sheet to form the dashboard.
+    - Particular emphasis was placed on the **Timeline** and **Dynamic Filters** for casino providers and games, ensuring a highly interactive experience and seamless integration with pivot tables and charts. These features enable users to analyze trends over time and customize their views according to selected criteria.
+  
+    - - **Excel File Structure**
+    
+    Here is the structure of the Excel file:
+    
+    1. **Dashboard**:
+        - The main sheet displaying key charts and KPIs with dynamic filters and a timeline for temporal analysis.
+    2. **Dataset**:
+        - The formatted data table used as the source for pivot tables and charts.
+    3. **Trends**:
+        - Pivot table supporting the area chart showing **BET**, **WIN**, and **RAKE** trends over time.
+    4. **Rake:**
+        - Pivot table with Total **RAKE** over time.
+    5. **Games**:
+        - Pivot table showcasing the **top 5 games** by **BET** and corresponding **WIN**.
+        - A linked table for calculating **Overall RTP** and **Medium Session RTP**.
+    6. **Players**:
+        - Similar to **Games**, but focused on **top 5 players** by **BUY IN** and corresponding **STACK**, including RTP calculations.
+    7. **Providers**:
+        - Pivot table illustrating the distribution of **BUY IN** across different **casino providers**.
+    8. **Row Data**:
+        - The raw, unprocessed data as initially downloaded from the source.
+      
+## **Discussion and Conclusions**
+
+The dashboard serves as a powerful tool for monitoring online casino behavior.
+
+Thanks to its flexible structure, it enables:
+
+- Identification of trends and anomalies in gaming behavior.
+- Optimization of agency management strategies.
+- Provision of an advanced analytical tool that bookmakers usually do not offer to operators.
+
+Future developments could include connecting the project to a **dynamic data source**, such as a **corporate database**, to enable **real-time data updates**. This would allow for more accurate monitoring and decision-making by providing up-to-date information. Additionally, **predictive models** based on machine learning could be implemented to estimate player behavior and optimize business strategies.
+
+**Conclusion**: This project aims to be a scalable and adaptable solution for various levels of the gaming industry, offering analytical and strategic control to industry professionals.
